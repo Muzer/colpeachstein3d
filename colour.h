@@ -1,6 +1,9 @@
 #ifndef COLOUR_H
 #define COLOUR_H
 
+namespace colpeachstein3d
+{
+
 struct colour 
 {
   uint8_t r, g, b;
@@ -15,5 +18,7 @@ struct colour
     return !(lhs == rhs);
   }
 };
+
+}
 
 #endif // COLOUR_H

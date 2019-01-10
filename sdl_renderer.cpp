@@ -24,7 +24,8 @@ void sdl_renderer::sleep(uint32_t msec)
 void sdl_renderer::draw_pixel(
     uint32_t x, uint32_t y, const colour& pixel_colour)
 {
-  if (pixel_colour != last_colour) {
+  if (pixel_colour != last_colour)
+  {
     renderer.SetDrawColor(pixel_colour.r, pixel_colour.g, pixel_colour.b);
     last_colour = pixel_colour;
   }
