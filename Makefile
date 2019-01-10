@@ -4,7 +4,7 @@ LDFLAGS := $(shell pkg-config --libs $(PKGCONFIG_NESS))
 # You might need to change this to g++ or clang++ if you don't have a symlink
 CXX := c++
 
-SRCS := main.cpp sdl_renderer.cpp
+SRCS := main.cpp sdl_renderer.cpp sdl_input.cpp
 OBJS := $(SRCS:%.cpp=%.o)
 
 colpeachstein3d: $(OBJS) Makefile
