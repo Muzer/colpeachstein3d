@@ -27,6 +27,10 @@ public:
       uint32_t x, uint32_t y_start, uint32_t y_end, const colour &line_colour);
     // Draws a line in column x starting at y_start and ending at y_end-1, of
     // the specified colour
+  void draw_line(
+            uint32_t x_start, uint32_t y_start, uint32_t x_end, uint32_t y_end, const colour &line_colour);
+    // Draws a line starting at (x_start, y_start) and ending at (x_end,y_end), of
+    // the specified colour
   void draw_rectangle(
       uint32_t x_start,
       uint32_t y_start,

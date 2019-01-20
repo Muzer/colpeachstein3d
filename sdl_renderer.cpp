@@ -33,6 +33,18 @@ void sdl_renderer::draw_pixel(
   renderer.DrawPoint(x, y);
 }
 
+void sdl_renderer::draw_line(uint32_t x_start, uint32_t y_start, uint32_t x_end,
+                             uint32_t y_end,
+                             const colpeachstein3d::colour &line_colour) {
+  if (line_colour != last_colour)
+  {
+    renderer.SetDrawColor(line_colour.r, line_colour.g, line_colour.b);
+    last_colour = line_colour;
+  }
+
+  renderer.DrawLine(x_start, y_start, x_end, y_end);
+}
+
 uint32_t sdl_renderer::canvas_width()
 {
   return renderer.GetOutputWidth();

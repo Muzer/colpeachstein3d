@@ -1,6 +1,8 @@
 #ifndef COLOUR_H
 #define COLOUR_H
 
+#include <cstdint>
+
 namespace colpeachstein3d
 {
 
